@@ -4,9 +4,8 @@ public:
         int n=s.length();
         int x=n/2;
         sort(s.begin(),s.begin()+x);
-        for (int i=0; i<x;i++) {
-            s[n-i-1] = s[i];
-        }
+        sort(s.end()-x,s.end());
+        reverse(s.end()-x,s.end());
         return s;
     }
 };
