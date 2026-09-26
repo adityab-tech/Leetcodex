@@ -8,6 +8,6 @@ public:
         if((sr+sc)==(tr+tc)|| (sr-sc)==(tr-tc) || (sr==tr)||(sc==tc)){
             return 1;
         }
-        else return 2;
+        return 2;
     }
 };
